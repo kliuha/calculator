@@ -1,6 +1,9 @@
 const button = document.querySelector(".inpb");
-console.log(button)
 button.addEventListener("click",function (){
     let input = document.querySelector(".inpt");
-    document.querySelector(".block").innerHTML =  input.value;
+    let cnt = 0;
+    for (letter in input.value){
+        cnt++
+    }
+    document.querySelector(".block").innerHTML =  cnt;
 })
